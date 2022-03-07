@@ -1,7 +1,11 @@
 <template>
-    <AppHeader />
-    <router-view />
-    <AppFooter />
+    <div>
+        <AppHeader />
+        <div>
+            <router-view />
+        </div>
+        <AppFooter />
+    </div>
 </template>
 
 <script>
