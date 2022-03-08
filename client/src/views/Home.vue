@@ -1,9 +1,19 @@
 <template>
-    <div>Home</div>
+    <div>
+        <Banner :image="require('@/assets/image/banner_img_01.jpg')" />
+    </div>
 </template>
 
 <script>
-export default {}
+import Banner from '@/components/common/Banner'
+
+export default {
+    components: {
+        Banner,
+    },
+
+    setup() {},
+}
 </script>
 
 <style></style>

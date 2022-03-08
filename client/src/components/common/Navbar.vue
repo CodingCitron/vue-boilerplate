@@ -1,48 +1,56 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbarNav">
+        <!-- left -->
+        <div class="container-fluid d-flex">
+            <div class="d-flex flex-grow-1">
+                <a class="navbar-brand" href="#">Logo</a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- left -->
+            <!-- right -->
+            <div>
+                <ul class="navbar-nav collapse navbar-collapse">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
-                            >Home</a
-                        >
+                        <a href="#" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a
-                            class="nav-link disabled"
-                            href="#"
-                            tabindex="-1"
-                            aria-disabled="true"
-                            >Disabled</a
-                        >
+                        <a href="#" class="nav-link">SignUp</a>
                     </li>
                 </ul>
             </div>
+            <!-- right -->
         </div>
     </nav>
 </template>
 
 <script>
-export default {}
+export default {
+    setup() {},
+}
 </script>
 
-<style></style>
+<style scoped>
+nav {
+    width: 100%;
+    background-color: inherit;
+}
+
+.navbar-brand {
+    display: block;
+}
+</style>
