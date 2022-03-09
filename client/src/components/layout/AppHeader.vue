@@ -1,16 +1,29 @@
 <template>
-    <header class="app-header fixed-top d-flex align-items-center bg-white">
-        <Navbar />
+    <header class="app-header fixed-top bg-white d-flex align-items-center">
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex align-items-center">
+                <a href="#">Logo</a>
+            </div>
+            <nav>
+                <Dropdown height="70px" />
+            </nav>
+            <div class="d-flex align-items-center">
+                <ul class="d-flex mb-0 p-0">
+                    <li><a href="#" class="btn">로그인</a></li>
+                    <li><a href="#" class="btn">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
     <div class="header-space"></div>
 </template>
 
 <script>
-import Navbar from '@/components/common/Navbar.vue'
+import Dropdown from '@/components/common/Dropdown.vue'
 
 export default {
     components: {
-        Navbar,
+        Dropdown,
     },
 }
 </script>
