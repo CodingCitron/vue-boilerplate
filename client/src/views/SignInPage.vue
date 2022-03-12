@@ -1,15 +1,14 @@
 <template>
     <div class="container mt-4 mb-4">
-        <SignUpForm />
+        <SignInForm />
     </div>
 </template>
 
 <script>
-import SignUpForm from '@/components/common/SignUpForm'
-
+import SignInForm from '@/components/common/SignInForm'
 export default {
     components: {
-        SignUpForm,
+        SignInForm,
     },
 }
 </script>

@@ -1,5 +1,6 @@
 <template>
     <header class="app-header fixed-top bg-white d-flex align-items-center">
+        <!-- 993 이상 -->
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center">
                 <router-link to="/">Logo</router-link>
@@ -10,14 +11,23 @@
             <div class="d-flex align-items-center">
                 <ul class="d-flex mb-0 p-0">
                     <li>
-                        <router-link to="/signup" class="btn"
+                        <router-link to="/signin" class="btn"
                             >로그인</router-link
                         >
                     </li>
-                    <li><a href="#" class="btn">회원가입</a></li>
+                    <li>
+                        <router-link to="/signup" class="btn"
+                            >회원가입</router-link
+                        >
+                    </li>
                 </ul>
             </div>
         </div>
+        <!-- 993 이상 -->
+
+        <!-- 992 이하 -->
+        <div></div>
+        <!-- 992 이하 -->
     </header>
     <div class="header-space"></div>
 </template>
