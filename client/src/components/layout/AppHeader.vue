@@ -2,14 +2,18 @@
     <header class="app-header fixed-top bg-white d-flex align-items-center">
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center">
-                <a href="#">Logo</a>
+                <router-link to="/">Logo</router-link>
             </div>
             <nav>
                 <Dropdown height="70px" />
             </nav>
             <div class="d-flex align-items-center">
                 <ul class="d-flex mb-0 p-0">
-                    <li><a href="#" class="btn">로그인</a></li>
+                    <li>
+                        <router-link to="/signup" class="btn"
+                            >로그인</router-link
+                        >
+                    </li>
                     <li><a href="#" class="btn">회원가입</a></li>
                 </ul>
             </div>
